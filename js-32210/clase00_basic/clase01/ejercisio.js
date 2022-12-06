@@ -33,7 +33,7 @@ Favi.count()
 Favi.count()
 Gustavo.count()
 Gustavo.count()
-
+Gustavo.count()
 console.log(`${Carolina.getResponsible()}: ${Carolina.getCounterLocal()}`);
 console.log(`${Daniel.getResponsible()}: ${Daniel.getCounterLocal()}`);
 console.log(`${Favi.getResponsible()}: ${Favi.getCounterLocal()}`);

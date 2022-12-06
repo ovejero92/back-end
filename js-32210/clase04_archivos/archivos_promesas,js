@@ -1,0 +1,18 @@
+const fs = require('fs')
+
+const filename = './ejmplo.txt'
+
+const operacionAsync = async() => {
+    await fs.promises.writeFile(filename, 'saludos a adrian campo!!\n')
+
+   let contenido = await fs.promises.readFile(filename, 'utf-8')
+    console.log('contenido:', contenido );
+
+    await fs.promises.appendFile(filename, 'Saludos para Lucas Rueca')
+
+    contenido = await fs.promises.readFile(filename, 'utf-8')
+    console.log('CONTENIDO NEW:' , contenido);
+
+    fs.promises.unlink(filename)
+}
+operacionAsync()
