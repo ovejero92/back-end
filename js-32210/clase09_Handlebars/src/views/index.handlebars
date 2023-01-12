@@ -1,0 +1,16 @@
+<div>
+    <h1>Hola, {{user.name}} {{user.lastname}}, welcome.</h1>
+    {{#if isAdmin}}
+     
+    {{#each foods}}
+    <div>
+        <p> {{this.name}} </p>
+        <p> <b>${{this.price}}</b> </p>
+        <hr>
+    </div>
+    {{/each}}
+    {{else}}
+    <p>No podes ver capo</p>
+    {{/if}}
+</div>
+<script src="/js-32210/clase09_Handlebars/public/js/index.js"></script>

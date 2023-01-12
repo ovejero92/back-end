@@ -5,7 +5,8 @@ const manager = new ProductManager('products.json');
 (async () => { 
    await manager.addProduct({
     name:'wine', 
-    price: 150
+    price: 150,
+    stock:20
 })
 
 console.log(await manager.getProducts());
